@@ -1,2 +1,4 @@
-let msg: String = "Hello World!";
-console.log(msg.toUpperCase());
+function show(msg: String): String {
+    return msg.toUpperCase();
+}
+console.log(show("Hello World!"));

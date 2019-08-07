@@ -27,11 +27,34 @@ yarn add tslint --dev
 ```
 - 查看分支 **tslint-init** 可以查看初始化的tslint配置
 - [使用alloyTeam的tslint配置](https://github.com/AlloyTeam/tslint-config-alloy)
+- [网址链接](https://alloyteam.github.io/tslint-config-alloy/)
 ```
 yarn add tslint-config-alloy --dev
 ```
 - 修改tslint
-
+```
+{
+    "extends": "tslint-config-alloy",
+    "rules": {
+        // 这里填入你的项目需要的个性化配置，比如：
+        //
+        // 一个缩进必须用两个空格替代
+        // "indent": [
+        //     true,
+        //     "spaces",
+        //     2
+        // ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "**/node_modules/**"
+        ]
+    }
+}
+```
+- 常见的错误
+    - 字符串单引号，新增rules： "quotemark":[true, "double"]
+    - Expected linebreak to be 'LF' (linebreak-style)tslint(1) 新增rules：  "linebreak-style":false
 ## 开始步骤
 ```
 // 下载依赖

@@ -1,3 +1,5 @@
 "use strict";
-var msg = "Hello World!";
-console.log(msg.toUpperCase());
+function show(msg) {
+    return msg.toUpperCase();
+}
+console.log(show("Hello World!"));
