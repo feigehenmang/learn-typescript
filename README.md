@@ -1,5 +1,5 @@
 # learn-typescript
-learn-typescript
+[learn-typescript](https://ts.xcatliu.com/basics/type-of-function)
 ## 初始化项目步骤
 ```
 git clone https://github.com/feigehenmang/learn-typescript.git
