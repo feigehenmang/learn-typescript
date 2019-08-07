@@ -6,7 +6,7 @@
   "scripts": {
     "tslint": "npx tslint --project . src/**/*.ts src/**/*.tsx",
     "clear": "rm -rf ./output/",
-    "build": "yarn clear && npx tsc"
+    "build": "yarn clear && yarn tslint && npx tsc"
   },
   "repository": {
     "type": "git",

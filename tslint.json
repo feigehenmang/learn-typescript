@@ -7,7 +7,10 @@
             2
         ],
         "quotemark":[true, "double"],
-        "linebreak-style":false
+        "linebreak-style":false,
+        "no-construct":false,
+        "no-invalid-this":false,
+        "callable-types":false
     },
     "linterOptions": {
         "exclude": [
