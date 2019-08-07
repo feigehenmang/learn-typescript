@@ -1,0 +1,28 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "learn-typescript",
+  "main": "index.js",
+  "scripts": {
+    "tslint": "npx tslint --project . src/**/*.ts src/**/*.tsx",
+    "clear": "rm -rf ./output/",
+    "build": "yarn clear && npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feigehenmang/learn-typescript.git"
+  },
+  "author": "feigehenmang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feigehenmang/learn-typescript/issues"
+  },
+  "homepage": "https://github.com/feigehenmang/learn-typescript#readme",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.18.0",
+    "tslint-config-alloy": "^0.2.1"
+  }
+}
