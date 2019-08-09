@@ -22,10 +22,34 @@ search = (source: string, substring: string) => source.indexOf(substring) >= 0;
 function buildName(firstName: string, lastName?: string): string {
     return lastName ? firstName + lastName : firstName;
 }
-console.log(buildName("Tom"));
+// 默认参数
+function basicParam(params: string, param1 = "Li"): string {
+    return params + param1;
+}
+// console.log(basicParam("tom"));
+// console.log(buildName("Tom"));
+// 剩余参数
+function push(params: any[], ...rest: any[]): any[] {
+    // console.log(rest);
+    rest.map((item: any) => params.push(item));
+    return params;
+}
+console.log(push([], 1, "1"));
+// 重载
+function reverse(param: number): number;
+function reverse(param: string): string;
+function reverse(param: number | string): number | string {
+    if (typeof param === "number") {
+        return Number(param.toString().split("").reverse().join(""));
+    } else {
+        return param.split("").reverse().join("");
+    }
+}
 
-
+console.log(reverse("nihao"));
+const num1 = 19;
+console.log(reverse(num1));
 /**
- * - 输入多余的货少于要求的参数，是不被允许的;
+ * - 输入多余的或少于要求的参数，是不被允许的;
  */
 
