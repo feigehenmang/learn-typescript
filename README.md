@@ -113,3 +113,7 @@ myFavoriteNumber = 7;
 - 直接扩展全局变量：通过 <script> 标签引入后，改变一个全局变量的结构
 - 在 npm 包或 UMD 库中扩展全局变量：引用 npm 包或 UMD 库后，改变一个全局变量的结构
 - 模块插件：通过 <script> 或 import 导入后，改变另一个模块的结构
+---
+
+### [数组方法扩展](https://juejin.im/post/5d82c12ff265da03a31d6f92?utm_source=gold_browser_extension)
+example: array.html src/array.extend.ts
