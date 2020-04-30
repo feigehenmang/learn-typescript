@@ -20,7 +20,7 @@
   "homepage": "https://github.com/feigehenmang/learn-typescript#readme",
   "dependencies": {
     "@types/lodash": "^4.14.136",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "typescript": "^3.5.3"
   },
