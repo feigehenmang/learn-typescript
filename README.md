@@ -3,8 +3,23 @@
 ## Git Commit Message
     1. cnpm i commitizen --save-dev
     2. [CZ说明](https://juejin.im/post/6844903831893966856)
-    3. npx commitizen init cz-conventional-changelog --save --save-exact
-    
+```
+npx commitizen init cz-conventional-changelog --save --save-exact
+// 等价于
+1. cnpm i cz-conventional-changelog --save-dev
+2. 
+"devDependencies": {
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0" // add 
+  },
+  // add
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+```
+    3. npx git-cz 即可
 ## 简述符合Angular规范的提交说明的结构组成
 ## Commit 信息 如何和Github Issues 关联
 ## 如何生成版本日志
