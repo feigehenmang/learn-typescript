@@ -20,6 +20,10 @@ npx commitizen init cz-conventional-changelog --save --save-exact
   }
 ```
     3. npx git-cz 即可
+    4. custom commit 
+    ```
+    
+    ```
 ## 简述符合Angular规范的提交说明的结构组成
 ## Commit 信息 如何和Github Issues 关联
 ## 如何生成版本日志

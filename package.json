@@ -18,11 +18,12 @@
   "homepage": "https://github.com/feigehenmang/learn-typescript#readme",
   "devDependencies": {
     "commitizen": "^4.1.2",
-    "cz-conventional-changelog": "^3.2.0"
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^6.3.0"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-customizable"
     }
   }
 }
